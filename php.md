@@ -1,6 +1,20 @@
-Naming standards:
-=================
-__Classes:__ `PascalCase`
+
+1. Files
+--------
+
+- Files MUST use only `<?php` tags only.
+
+- Files MUST use only UTF-8 without BOM for PHP code.
+
+- Files SHOULD *either* declare symbols (classes, functions, constants, etc.)
+  *or* cause side-effects (e.g. generate output, change .ini settings, etc.)
+  but SHOULD NOT do both.
+
+
+2. Naming standards
+-------------------
+__namespaces:__  `namespace Vendor\Model;`
+__Classes:__ `StudlyCaps`
 
 __Methods, Properties, Functions, Variables:__ `camelCase`
 
