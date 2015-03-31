@@ -10,6 +10,12 @@
   *or* cause side-effects (e.g. generate output, change .ini settings, etc.)
   but SHOULD NOT do both.
 
+- All files MUST use the Unix LF (linefeed) line ending.
+
+- All files MUST end with a single blank line.
+
+- The closing ?> tag MUST be omitted from files containing only PHP.
+
 
 2. Naming standards
 -------------------
