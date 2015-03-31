@@ -1,28 +1,35 @@
 Naming standards:
 =================
-Classes: `PascalCase`
+__Classes:__ `PascalCase`
 
-Methods, Properties, Functions, Variables: `camelCase`
+__Methods, Properties, Functions, Variables:__ `camelCase`
 
-Constants: Upper case with underscore: `CONST_EXAMPLE`
+__Constants:__ Upper case with underscore: `CONST_EXAMPLE`
+
+__Variables:__
+
+Variable that holds a model object should have the name of the model class
+
+Example: `$customer = new Customer(‘x’);`
+
+Variable that don’t hold models (int/bool/str) should be named with a meaningful name:
+
+Example: `$customerId`, `$customerIdsArr`
  
-Variable that holds a model object should have the name of the model class, example:
-
-`$customer = new Customer(‘x’);`
-
-Variable that don’t hold models (int/bool/str) should be named with a meaningful name: `$customerId`, `$customerIdsArr`
- 
-Arrays:
+__Arrays:__
 
 Array with keys and values: `array(‘x’=>’1’,’y’=>’2’);`
 Array with only values: `array(‘1’,’2’);`
  
-Blocks of code:
+__Blocks of code:__
 
 All blocks should be closed with `{ }` even if it’s an IF statement with 1 statement line.
  
-Brackets:
-Always on separate line, example:
+__Brackets:__
+
+Always on separate line
+
+Example:
 
 ```
 If(true)
@@ -31,16 +38,17 @@ If(true)
 }
 ```
  
-Comments:
+__Comments:__
+
 Add function description like so:
 ```
 /**
 * description
 */
 ```
- 
+
 One line comment with `//` not `/*..*/`
  
-Function length: 
+__Function length: __
 
 functions with +70 lines should be broken into multiple functions if possible, for ease of readability, maintanence and code reuseability.
